@@ -2,7 +2,7 @@ module.exports = {
     testEnvironment: "node",
     roots: ["test"],
     collectCoverageFrom: [
-        "index.js",
+        "src/index.js",
         "!<rootDir>/node_modules/",
     ],
 };
