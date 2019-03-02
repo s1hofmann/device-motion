@@ -1,12 +1,18 @@
 # device-motion
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/s1hofmann/device-motion.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.com/s1hofmann/device-motion.svg?branch=master)](https://travis-ci.com/s1hofmann/device-motion)[![Greenkeeper badge](https://badges.greenkeeper.io/s1hofmann/device-motion.svg)](https://greenkeeper.io/)[SonarCloud badge](https://sonarcloud.io/api/project_badges/measure?project=s1hofmann_device-motion&metric=alert_status)](https://sonarcloud.io/dashboard?id=s1hofmann_device-motion) [![SonarCloud Coverage](https://sonarcloud.io/api/project_badges/measure?project=s1hofmann_device-motion&metric=coverage)](https://sonarcloud.io/component_measures?id=s1hofmann_device-motion&metric=coverage)
 
 This repository contains a little library I created to react on device-motion events.
 
-The following sample demonstrates how I use it with React.
+## Installation
+
+```
+npm install device-motion # OR yarn add device-motion
+```
 
 ## Sample
+
+The following sample demonstrates how I use it with React.
 
 ```js
 import React from "react";
