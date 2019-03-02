@@ -1,6 +1,6 @@
 {
   "name": "device-motion",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A package to work with the device-motion API..",
   "main": "lib/index.js",
   "scripts": {
@@ -8,9 +8,7 @@
     "build": "npm run clear && babel -s inline -d lib src",
     "test": "jest",
     "coverage": "jest --coverage",
-    "prepublishOnly": "npm test && npm run build",
-    "version": "git add -A",
-    "postversion": "git push && git push --tags"
+    "prepublishOnly": "npm test && npm run build"
   },
   "keywords": [
     "device-motion",
