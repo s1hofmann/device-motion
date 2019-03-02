@@ -1,0 +1,41 @@
+{
+  "name": "device-motion",
+  "version": "1.0.0",
+  "description": "A package to work with the device-motion API..",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "prepublishOnly": "npm test",
+    "version": "git add -A",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "device-motion",
+    "web",
+    "API"
+  ],
+  "author": {
+    "name": "Simon Hofmann",
+    "email": "dev@simon-hofmann.org",
+    "url": "https://simon-hofmann.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s1hofmann/device-motion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/s1hofmann/device-motion/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/plugin-transform-runtime": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/runtime": "^7.3.4",
+    "babel-eslint": "^10.0.1",
+    "jest": "^24.1.0"
+  }
+}
