@@ -1,12 +1,14 @@
 {
   "name": "device-motion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package to work with the device-motion API..",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "clear": "rm -rf lib",
+    "build": "npm run clear && babel -s inline -d lib src",
     "test": "jest",
     "coverage": "jest --coverage",
-    "prepublishOnly": "npm test",
+    "prepublishOnly": "npm test && npm run build",
     "version": "git add -A",
     "postversion": "git push && git push --tags"
   },
@@ -29,13 +31,13 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
     "@babel/plugin-proposal-class-properties": "^7.3.4",
     "@babel/plugin-transform-react-jsx": "^7.3.0",
     "@babel/plugin-transform-runtime": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "@babel/runtime": "^7.3.4",
-    "babel-eslint": "^10.0.1",
     "jest": "^24.1.0"
   }
 }
