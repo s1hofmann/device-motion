@@ -1,4 +1,4 @@
-import { Seismograph } from "./index";
+import { Seismograph } from "../src/index";
 
 describe("Seismograph", () => {
     it("should provide default constructor values", () => {
