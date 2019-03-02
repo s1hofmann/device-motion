@@ -1,4 +1,7 @@
 # device-motion
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/s1hofmann/device-motion.svg)](https://greenkeeper.io/)
+
 This repository contains a little library I created to react on device-motion events.
 
 The following sample demonstrates how I use it with React.
