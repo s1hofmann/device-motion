@@ -1,4 +1,15 @@
 language: node_js
 node_js:
-  - "node"
+- node
 cache: npm
+
+addons:
+  sonarcloud:
+    organization: "s1hofmann-github"
+    token:
+      secure: gWRW9/T5Vy8MvFKkhcPTz5/ioUwLPe/3uQl6az5GsUrLGxbxmKDCKiIGIGeIyAhTyddyFBi/JX4MZBFyo8t0LVOkTE229P9Dk+d7cxcdqEhF6Dy+hKvc2EnYLqmN8HOtZ7okhdrqRsTfOHYx+jerGExWCBDEwlCnpcMD85pscN3OyL5jZGGz3NeEvRN2gFq9h0Z/ihJugYexquolcLhDCrtgBB695ynluEFG9C9iXq6JE2GfWoKJXhobXtZbYhzqgVYyK9eGRzroYXM+A7xMMF3lLUG2FTNxH1s6yaEPH0SQbyiFIiOxhBzOBKfiJhdB4z+rX15MRJIUd++5TKaMi2F0XKvEEkUGiQPT2TCH1vFmzhU3d30QI1iVbb7wRmbpay8/1Qow4K6wjBpZmk/fsVwfrZIonwcbB7HQvH/A73jvVGH0Qjd4AH2eqn4FvQnYktxjr6a5YEuAkB80orOHBUxEqZpdYKy/P4BDMGUZB7uhYeAvZq+CORFJi9aKyZIqYQGFitnwInptbBBdZfHHGZaMTmvnOhstOI/K8EmjOlWVEHq8j4Dh+vbGuN4CAGEJc4S4vcpEOoxRE2wCT8N38ezhvMjA6i78Et82W71tuPiOynUiv8mVnXD16wKGysC8EPgasta10VZWLFUvgKVIvrClPs+sO9LVwQLVnLDyg2I=
+
+script: npm run coverage
+
+after_success:
+  - sonar-scanner
