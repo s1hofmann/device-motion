@@ -4,7 +4,7 @@
 
 This repository contains a little library I created to react on device-motion events.
 
-## Installation
+## Installation ![npm](https://img.shields.io/npm/dt/device-motion.svg)
 
 ```
 npm install device-motion # OR yarn add device-motion
