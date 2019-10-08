@@ -29,7 +29,18 @@ export class Seismograph {
   }
 
   startRecording = () => {
-    window.addEventListener("devicemotion", this._onMotionEvent);
+    if (typeof DeviceMotionEvent.requestPermission === 'function') {
+      // iOS 13+
+      DeviceMotionEvent.requestPermission()
+        .then(response => {
+          if (response == 'granted') {
+            window.addEventListener("devicemotion", this._onMotionEvent);
+          }
+        })
+        .catch(console.error)
+    } else {
+      window.addEventListener("devicemotion", this._onMotionEvent);
+    }
   };
 
   stopRecording = () => {
